@@ -12,8 +12,12 @@ export default class TextFormatter extends PureComponent {
   render() {
     return (
       <>
-      <input name="text" value={this.state.text} onChange={this.handleTextChange} />,
-      <p>{this.state.text}</p>
+      Enter Your Text:
+      <input name="text" value={this.state.text} onChange={this.handleTextChange} />
+      Color For Your Text:
+      <input name="color" value={this.state.color} onChange={this.handleTextChange}></input>
+
+      <p style={{ color: this.state.color }}>{this.state.text}</p>
       </>
     );
   }
