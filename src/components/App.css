@@ -1,0 +1,9 @@
+.App {
+  a {
+    margin: 20px;
+    
+  }
+  .navBorder {
+    border: solid black 2px;
+  }
+}

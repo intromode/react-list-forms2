@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar component renders a Sidebar 1`] = `
+<nav>
+  <a>
+    Testing
+  </a>
+</nav>
+`;

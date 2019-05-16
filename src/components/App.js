@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
+import styles from './App.css';
 
 //normally we use classes if we want to hold state. but we can use functions + react hooks to hold state too. 
 // React will preserve this state between re-renders
@@ -16,14 +17,14 @@ export default function App() {
   };
 
   return (
-    <>
-    <Sidebar>
-      <a onClick={() => updateTab('home')}>Home</a>
-      <a onClick={() => updateTab('about')}>About</a>
-      <a onClick={() => updateTab('blog')}>Blog</a>
-      <a onClick={() => updateTab('contact')}>Contact</a>
-    </Sidebar>
-    <p>{tabs[selectedTab]}</p>
-    </>
+    <section className={styles.App}>
+      <Sidebar >
+        <a onClick={() => updateTab('home')}>Home</a>
+        <a onClick={() => updateTab('about')}>About</a>
+        <a onClick={() => updateTab('blog')}>Blog</a>
+        <a onClick={() => updateTab('contact')}>Contact</a>
+      </Sidebar>
+      <p>{tabs[selectedTab]}</p>
+    </section>
   );
 }
